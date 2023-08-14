@@ -1,0 +1,20 @@
+<%- include("header.ejs") %>
+<body>
+    <div class="container" id="weather-info-container">
+        <h1 id="city-name"><%= cityName %></h1>
+        <div class="weather-info-row">
+            <p><%= temp %> C°</p>
+            <p><%= description %></p>
+        </div>
+        <!-- <img src="<%= image_url %>" alt="weather icon"> -->
+        <div class="weather-info-row">
+            <p><i class="fa-solid fa-up-long" id="max-temp-icon"></i> <%= maxTemp %> C°</p>
+            
+        </div>
+
+        <div class="weather-info-row">
+            <p><i class="fa-solid fa-down-long"></i> <%= minTemp %> C°</p>
+        </div>
+    </div>
+</body>
+<%- include("footer.ejs") %>

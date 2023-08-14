@@ -1,0 +1,13 @@
+<%- include("header.ejs") %>
+<body>
+    <div class="container">
+        <h1 class="heading">WEATHER COMPANION</h1>
+        <form action="/" method="post">
+            <input type="text" class="fontAwesome" name="city_name" id="city_name" placeholder="&#xf3c5  Enter a city name" required>
+            <button type="submit">Search</button>
+        </form>
+        <p class="open-weather">Powered by <a href="https://openweathermap.org/">OpenWeather</a></p>
+    </div>
+</body>
+<%- include("footer.ejs") %>
+
